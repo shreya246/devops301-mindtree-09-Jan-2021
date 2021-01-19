@@ -67,7 +67,7 @@ sh 'docker-compose up -d --build'
 
 def notify(status){
     emailext(
-    to: "amitvashist7@outlook.com",
+    to: "shreyapnseja@gmail.com",
     subject: "${status} :JOB '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
     body:"""<p>${status}: :JOB '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p>
             <p>Check Console output at <a href='${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}]</a></p>""",
